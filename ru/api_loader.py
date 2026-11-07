@@ -1,7 +1,7 @@
 Загрузка цен закрытия для одной конкртетной акции с официального сервера Мосбиржи
 
-import pandas as pd
-import requests
+from imports import pd, requests
+
 
 def get_moex_data(paper, day_start="2025-01-01"):
     link = f"https://moex.com{paper}.json"                            # Ссылка на историю торгов конкретной бумаги
