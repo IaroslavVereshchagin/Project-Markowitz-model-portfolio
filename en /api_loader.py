@@ -1,7 +1,7 @@
 Downloading closing prices for one specific stock from the official Moscow Exchange server.
 
-import pandas as pd
-import requests
+from imports import pd, requests
+    
 
 def get_moex_data(paper, day_start="2025-01-01"):
     link = f"https://moex.com{paper}.json"                            # Link to the trading history of a specific security
